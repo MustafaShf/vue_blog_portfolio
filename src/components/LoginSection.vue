@@ -41,7 +41,8 @@ const errorMessage = ref("");
 
 const Login = () => {
   signInWithEmailAndPassword(getAuth(), email.value, password.value).then((data) => {
-    console.log("Successfully Signin", data);
+    //console.log("Successfully Signin", data);
+    data;
     router.push("/admin")
   })
     .catch((error) => {
